@@ -13,5 +13,4 @@ def browser(request):
     browser=webdriver.Chrome()
     browser.get(url)
     yield browser
-    sleep(5)
     browser.quit()
